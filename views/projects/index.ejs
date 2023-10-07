@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header.ejs %>
+<body>
+    <div class="big-spacer text-white">
+        <% include ../partials/navigationBar.ejs %>
+        <h1><%= page %></h1>
+        <hr>
+        <p>Request time: <%= time %></p>
+        <p>Page requests: <%= count %> (since last server restart)</p>
+        <hr>
+        <h2>Projects</h2>
+        <table style="color: white">
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>Game Programming - Jungle Dash</td>
+                <td><p>
+                        Making a game called Jungle Dash for my Game Programming course.<br>
+                        It is a platformer / side scroller game being developed by 3 people including me.<br>
+                        <a href="https://github.com/gtaEPIC/Jungle-Dash">Checkout the github repository</a>
+                </p></td>
+                <td>
+                    <img src="/images/jungle-dash.png" style="width: 256px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Inventory System</td>
+                <td><p>
+                        As a side project I am making a nodejs, socket.io web server for an Inventory system.<br>
+                        This is a solo project that I periodically work on from time to time.<br>
+                        It features keeping count of certain items, order and order progress.<br>
+                </p></td>
+                <td>
+                    <img src="/images/inventory.png" style="width: 256px">
+                </td>
+            </tr>
+            <tr>
+                <td>TTC Academy 2.0</td>
+                <td><p>
+                        One of my favourite side projects, another nodejs, socket.io / websocket server for transit enthusiasts.<br>
+                        This is a solo project that I work on every once in a while.<br>
+                        Made to roleplay realistic operations of the Toronto Transit Commission.<br>
+                        Features a dispatcher screen with working game signals with more to come.<br>
+                        Although the project is private, you can <a href="https://ttcacademy.ca">Check out the website used</a>
+                </p></td>
+                <td>
+                    <img src="/images/ttc-run.png" style="width: 256px">
+                </td>
+            </tr>
+        </table>
+        <% include ../partials/footer.ejs %>
+    </div>
+</body>
+</html>

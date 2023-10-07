@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header.ejs %>
+<body>
+    <div class="big-spacer text-white">
+        <% include ../partials/navigationBar.ejs %>
+        <h1><%= page %></h1>
+        <hr>
+        <p>Request time: <%= time %></p>
+        <p>Page requests: <%= count %> (since last server restart)</p>
+        <hr>
+        <h2>Services</h2>
+        <p>Use the <a href="/contact">Contact</a> page to get in touch with me and I may or may not respond</a></p>
+        <table style="color: white">
+            <tr>
+                <th>Service</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>Code review</td>
+                <td><img src="/images/code-review.png" alt="Code review" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Creating a NodeJS webserver</td>
+                <td><img src="/images/nodejs.png" alt="NodeJS" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Creating a Socket.IO server</td>
+                <td><img src="/images/socketio.png" alt="Socket.IO" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Roblox Game Development</td>
+                <td><img src="/images/roblox.png" alt="Roblox" width="100" height="100"></td>
+            </tr>
+        </table>
+        <% include ../partials/footer.ejs %>
+    </div>
+</body>
+</html>
