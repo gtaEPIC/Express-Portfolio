@@ -1,13 +1,23 @@
+/*
+    This is the main stylesheet for the application.
+    It is used for every page.
+    File: public/stylesheets/style.css
+    Author: Johnathan Hall
+    Student #: 301189555
+    Date: October 7, 2023
+ */
+
+/* Custom Dark mode */
 body {
-    /*padding: 50px;*/
-    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
     background: #414141;
 }
 
+/* Custom link colour */
 a {
     color: #00B7FF;
 }
 
+/* CSS to beautify the navigation bar a bit more */
 nav {
     height: fit-content;
     background: linear-gradient(black, grey);
@@ -15,6 +25,11 @@ nav {
     border-radius: 5px;
     color: white;
 }
+nav strong {
+    font-size: 25px;
+}
+
+/* Space management */
 div.spacer {
     padding: 12px;
 }
@@ -22,27 +37,28 @@ div.big-spacer {
     margin: 2em;
 }
 
+/* Changes the text to white and uses a different font */
 .text-white {
     color: white;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+/* Makes images in the navigation bar circular */
 nav img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
     margin: 0 10px;
 }
-nav strong {
-    font-size: 25px;
-}
 
+/* Red horizontal lines to separate sections */
 hr {
     border-style: solid;
     border-color: #c50606;
     border-width: 2px;
 }
 
+/* Table styling */
 table {
     border-collapse: collapse;
     border-style: groove;
@@ -50,13 +66,13 @@ table {
     border-width: 2px;
 
     width: 100%;
-    color: #d96459;
     font-family: monospace;
     font-size: 25px;
     text-align: left;
     /*background: #f2f2f2;*/
 }
 
+/* The CSS used for the image of me */
 img.me {
     float: right;
     border-radius: 10%;

@@ -1,3 +1,10 @@
+/*
+    This is the route for the main page.
+    File name: index.js
+    Author: Johnathan Hall
+    Student #: 301189555
+    Date: October 7, 2023
+ */
 var express = require('express');
 var router = express.Router();
 let counter = 0;

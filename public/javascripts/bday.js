@@ -1,3 +1,10 @@
+/*
+    This file is responsible for the birthday countdown found on the About me page
+    File name: bday.js
+    Author: Johnathan Hall
+    Student #: 301189555
+    Date: October 7, 2023
+ */
 const birthday = new Date("October 3, 2023");
 const nextDay = new Date("October 4, 2023");
 
