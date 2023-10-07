@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header.ejs %>
+<script src="/javascripts/bday.js"></script>
+<body>
+    <div class="big-spacer text-white">
+        <% include ../partials/navigationBar.ejs %>
+        <h1><%= page %></h1>
+        <hr>
+        <p>Request time: <%= time %></p>
+        <p>Page requests: <%= count %> (since last server restart)</p>
+        <hr>
+        <h3>Contact Form</h3>
+        <form method="post">
+            <div class="spacer">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+            </div>
+            <div class="spacer">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+            </div>
+            <div class="spacer">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+            </div>
+            <div class="spacer">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+            <div class="spacer">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <% include ../partials/footer.ejs %>
+    </div>
+</body>
+</html>

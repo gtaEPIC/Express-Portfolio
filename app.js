@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 let aboutRouter = require('./routes/about');
 let projectsRouter = require('./routes/projects');
 let servicesRouter = require('./routes/services');
-var usersRouter = require('./routes/users');
+let contactRouter = require('./routes/contact');
 
 var app = express();
 
@@ -23,10 +23,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use ('/about', aboutRouter); // About page
 app.use ('/projects', projectsRouter); // Projects page
 app.use ('/services', servicesRouter); // Services page
+app.use ('/contact', contactRouter); // Contact page
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
