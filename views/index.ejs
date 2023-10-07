@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta http-equiv="refresh" content="5">
+  </head>
+  <body>
+    <div class="big-spacer text-white">
+      <% include partials/navigationBar.ejs %>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <p>You are on <%= page %></p>
+      <hr>
+      <p>Request time: <%= time %></p>
+      <hr>
+      <p>Page Request count: <%= count %> (Since last server restart)</p>
+      <hr>
+      <h3>Find what you were looking for</h3>
+      <table>
+        <tr>
+          <td><a href="/about">About me</a></td>
+          <td><a href="/projects">Projects</a></td>
+        </tr>
+        <tr>
+          <td><a href="/services">Services</a></td>
+          <td><a href="/contact">Contact</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
