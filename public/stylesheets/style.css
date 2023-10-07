@@ -56,3 +56,10 @@ table {
     text-align: left;
     /*background: #f2f2f2;*/
 }
+
+img.me {
+    float: right;
+    border-radius: 10%;
+    width: 128px;
+    margin: 0 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header.ejs %>
+<script src="/javascripts/bday.js"></script>
+<body>
+    <div class="big-spacer text-white">
+        <% include ../partials/navigationBar.ejs %>
+        <h1><%= page %></h1>
+        <hr>
+        <p>Request time: <%= time %></p>
+        <p>Page requests: <%= count %> (since last server restart)</p>
+        <hr>
+        <img src="/images/JohnathanHall.jpg" alt="Johnathan Hall" class="me">
+        <h4>Points about me:</h4>
+        <ul>
+            <li>My name is <strong>Johnathan Hall</strong></li>
+            <li>The program I'm enrolled in is <strong>Game - Programming</strong></li>
+            <li>I am a <strong>Transit Enthusiast</strong></li>
+            <li>My birthday is <strong>October 3rd</strong>, my 20th Birthday <span id="bday"></span></li>
+            <li>I live in <strong>Bowmanville Ontario</strong></li>
+            <li>Programming languages I know:
+                <ul>
+                    <li>Javascript / Typescript</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Lua</li>
+                    <li>C++</li>
+                </ul>
+            </li>
+            <li>Games I play:
+                <ul>
+                    <li>Chess</li>
+                    <li>Simulator type games on Roblox</li>
+                    <li>Phasmophobia</li>
+                    <li>openBVE (Train Simulator)</li>
+                    <li>Open Rails (Train Simulator)</li>
+                    <li>Unrailed!</li>
+                    <li>and more...</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Documents:</h4>
+        <ul>
+            <li><a href="/docs/resume.pdf">Resume</a></li>
+        </ul>
+        <% include ../partials/footer.ejs %>
+    </div>
+</body>
+</html>

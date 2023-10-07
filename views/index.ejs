@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta http-equiv="refresh" content="5">
-  </head>
+<html lang="en">
+  <% include partials/header.ejs %>
   <body>
     <div class="big-spacer text-white">
       <% include partials/navigationBar.ejs %>
@@ -13,8 +9,10 @@
       <p>You are on <%= page %></p>
       <hr>
       <p>Request time: <%= time %></p>
-      <hr>
       <p>Page Request count: <%= count %> (Since last server restart)</p>
+      <hr>
+      <h3>Mission Statement</h3>
+      <p>Helping others when they need it</p>
       <hr>
       <h3>Find what you were looking for</h3>
       <table>
@@ -27,6 +25,7 @@
           <td><a href="/contact">Contact</a></td>
         </tr>
       </table>
+      <% include partials/footer.ejs %>
     </div>
   </body>
 </html>
