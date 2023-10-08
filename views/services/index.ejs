@@ -12,10 +12,7 @@ Date: October 7, 2023
     <div class="big-spacer text-white">
         <% include ../partials/navigationBar.ejs %>
         <h1><%= page %></h1>
-        <hr>
-        <p>Request time: <%= time %></p>
-        <p>Page requests: <%= count %> (since last server restart)</p>
-        <hr>
+        <% include ../partials/counter.ejs %>
         <h2>Services</h2>
         <p>Use the <a href="/contact">Contact</a> page to get in touch with me and I may or may not respond</a></p>
         <table style="color: white">

@@ -13,10 +13,7 @@ Date: October 7, 2023
     <div class="big-spacer text-white">
         <% include ../partials/navigationBar.ejs %>
         <h1><%= page %></h1>
-        <hr>
-        <p>Request time: <%= time %></p>
-        <p>Page requests: <%= count %> (since last server restart)</p>
-        <hr>
+        <% include ../partials/counter.ejs %>
         <h3>Contact Form</h3>
         <form method="post">
             <div class="spacer">

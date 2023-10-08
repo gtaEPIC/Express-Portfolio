@@ -14,10 +14,7 @@ Date: October 7, 2023
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>
       <p>You are on <%= page %></p>
-      <hr>
-      <p>Request time: <%= time %></p>
-      <p>Page Request count: <%= count %> (Since last server restart)</p>
-      <hr>
+      <% include partials/counter.ejs %>
       <h3>Mission Statement</h3>
       <p>Helping others when they need it</p>
       <hr>
